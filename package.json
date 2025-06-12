@@ -1,47 +1,46 @@
 {
-    "name": "atsuko-template",
-    "version": "2.0-old",
-    "description": "Command, slash command & event handler - Discord Bot Template (v13)",
-    "main": "index.js",
     "scripts": {
-        "start": "node .",
-        "slash": "node slash.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "github.com/TunxxVN/Atsuko-Template.git"
+        "start": "npm install && node index.js",
+        "setup": "node setup.js",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "format:staged": "prettier --write --cache --ignore-unknown"
     },
     "dependencies": {
+        "@discordjs/opus": "^0.10.0",
+        "@discordjs/voice": "^0.18.0",
         "@keyv/mongo": "^3.0.1",
-        "@vitalets/google-translate-api": "^9.2.0",
         "aki-api": "^7.0.0",
         "axios": "^1.7.7",
         "canvas": "^2.11.2",
         "chalk": "^4.1.2",
         "dayjs": "^1.11.13",
+        "discord-gamecord": "^4.4.2",
         "discord.js": "^14.16.3",
-        "ejs": "^3.1.10",
-        "express": "^4.21.1",
-        "express-session": "^1.18.1",
         "fuse.js": "^7.0.0",
+        "genius-lyrics": "^4.4.7",
+        "google-translate-api-x": "^10.7.2",
         "html-entities": "^2.5.2",
-        "lavalink-client": "^2.4.3",
+        "humanize-duration": "^3.33.0",
+        "kazagumo": "^3.3.0",
+        "kazagumo-deezer": "^2.0.2",
+        "kazagumo-filter": "^2.0.0",
+        "kazagumo-spotify": "^2.1.1",
+        "libsodium-wrappers": "^0.7.15",
         "moment": "^2.30.1",
         "mongoose": "^8.7.2",
         "ms": "^2.1.3",
+        "node-cron": "^4.1.0",
         "node-fetch": "^2.7.0",
-        "passport": "^0.7.0",
-        "passport-discord": "^0.1.4",
         "pretty-ms": "^9.1.0",
-        "react": "^18.3.1",
-        "react-dom": "^18.3.1",
-        "sharp": "^0.33.5"
+        "sharp": "^0.33.5",
+        "shoukaku": "^4.1.1",
+        "sodium-native": "^5.0.6",
+        "yt-search": "^2.13.1"
     },
     "devDependencies": {
-        "concurrently": "^7.0.0",
+        "concurrently": "^8.2.2",
         "cross-env": "^7.0.3",
-        "prettier": "^3.3.3",
-        "ts-migrate": "^0.1.35"
+        "prettier": "^3.3.3"
     }
 }
